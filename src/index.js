@@ -21,7 +21,7 @@ class App extends Component {
   }
 
   render() {
-    const Layout = createRootNavigator(false)
+    const Layout = createRootNavigator(true)
     return <Layout />
   }
 }

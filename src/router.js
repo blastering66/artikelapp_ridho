@@ -1,7 +1,12 @@
 import { StackNavigator } from 'react-navigation'
 
 import Home from './screens/Home'
+import TopStories from './screens/TopStories'
+import Search from './screens/Search'
+import Books from './screens/Books'
+import Profile from './screens/Profile'
 import Welcome from './screens/Welcome'
+import Detail from './screens/Detail'
 
 export const SignedOut = StackNavigator({
   Welcome: {
@@ -12,6 +17,12 @@ export const SignedOut = StackNavigator({
 export const SignedIn = StackNavigator({
   Home: {
     screen: Home,
+    navigationOptions: {
+      gesturesEnabled: false
+    }
+  },
+  Detail: {
+    screen: Detail,
     navigationOptions: {
       gesturesEnabled: false
     }
@@ -28,7 +39,7 @@ export const createRootNavigator = (signedIn = false) => {
         }
       },
       SignedIn: {
-        screen: SignedOut,
+        screen: SignedIn,
         navigationOptions: {
           gesturesEnabled: false
         }
