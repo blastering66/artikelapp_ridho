@@ -3,8 +3,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-  Image, ScrollView, ListView, RefreshControl, TouchableHighlight, ActivityIndicator
+  View, Dimensions, Image, ScrollView, ListView, RefreshControl, TouchableHighlight, ActivityIndicator
 } from 'react-native';
 import { fetcher, ENDPOINT } from '../utils/common'
 import Loading from '../components/Loading'
@@ -12,6 +11,7 @@ import Loading from '../components/Loading'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
+const { width } = Dimensions.get('window')
 const dsTop = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 const dsWorld = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 const dsSports = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
@@ -58,7 +58,7 @@ class TopStories extends Component {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
       this.setState({ loadingTop: false })
-      this.setState({ dataSourceTop: dsTop.cloneWithRows(json.results) })
+      this.setState({ dataSourceTop: dsTop.cloneWithRows(json.results.slice(0, 10)) })
     })
   }
 
@@ -68,7 +68,7 @@ class TopStories extends Component {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
       this.setState({ loadingWorld: false })
-      this.setState({ dataSourceWorld: dsWorld.cloneWithRows(json.results) })
+      this.setState({ dataSourceWorld: dsWorld.cloneWithRows(json.results.slice(0, 10)) })
     })
   }
 
@@ -78,7 +78,7 @@ class TopStories extends Component {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
       this.setState({ loadingSports: false })
-      this.setState({ dataSourceSports: dsSports.cloneWithRows(json.results) })
+      this.setState({ dataSourceSports: dsSports.cloneWithRows(json.results.slice(0, 10)) })
     })
   }
 
@@ -88,7 +88,7 @@ class TopStories extends Component {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
       this.setState({ loadingTech: false })
-      this.setState({ dataSourceTech: dsTech.cloneWithRows(json.results) })
+      this.setState({ dataSourceTech: dsTech.cloneWithRows(json.results.slice(0, 10)) })
     })
   }
 
@@ -98,7 +98,7 @@ class TopStories extends Component {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
       this.setState({ loadingHealth: false })
-      this.setState({ dataSourceHealth: dsHealth.cloneWithRows(json.results) })
+      this.setState({ dataSourceHealth: dsHealth.cloneWithRows(json.results.slice(0, 10)) })
     })
   }
 
@@ -108,7 +108,7 @@ class TopStories extends Component {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
       this.setState({ loadingMovies: false })
-      this.setState({ dataSourceMovies: dsMovies.cloneWithRows(json.results) })
+      this.setState({ dataSourceMovies: dsMovies.cloneWithRows(json.results.slice(0, 10)) })
     })
   }
 
@@ -122,8 +122,14 @@ class TopStories extends Component {
     return(
       <TouchableHighlight onPress={() => this.props.navigation.navigate('Detail') }>
         <View style={{ flex: 1, height: 200, width: 300,  flexDirection: 'row', padding: 10 }}>
-          <Image resizeMode={'cover'} source={{ uri: mediaUrl !== '' ? article.multimedia[3].url : '' }} style={{ flex: 1 }} />
-          <Text style={styles.article_title}>{article.title}</Text>
+          { mediaUrl !== '' ? (
+            <Image resizeMode={'cover'} source={{ uri: mediaUrl !== '' ? article.multimedia[3].url : '' }} style={{ flex: 1 }} />
+          ) : (
+            <Ionicons name="md-search" size={25} color="black" style={{ alignSelf: 'center' }} />
+          ) }
+          <View style={styles.article_title_container}>
+            <Text style={styles.article_title}>{article.title}</Text>
+          </View>
         </View>
       </TouchableHighlight>
     )
@@ -138,11 +144,10 @@ class TopStories extends Component {
           <View style={styles.container}>
           <Text style={styles.subtitle}>Top Stories</Text>
           { state.loadingTop ? (
-            <View style={{ alignSelf: 'center', width: 20, height: 20 }}>
-              <ActivityIndicator
-                color={'#dc1f1b'}
-                size={'small'}
-              />
+            <View style={styles.progress_container}>
+              <View style={styles.progress}>
+                <ActivityIndicator color={'#dc1f1b'} size={'small'} />
+              </View>
             </View>
           ) : (
             <ListView
@@ -170,11 +175,10 @@ class TopStories extends Component {
 
           <Text style={styles.subtitle}>World news</Text>
           { state.loadingWorld ? (
-            <View style={{ alignSelf: 'center', width: 20, height: 20 }}>
-              <ActivityIndicator
-                color={'#dc1f1b'}
-                size={'small'}
-              />
+            <View style={styles.progress_container}>
+              <View style={styles.progress}>
+                <ActivityIndicator color={'#dc1f1b'} size={'small'} />
+              </View>
             </View>
           ) : (
             <ListView
@@ -202,11 +206,10 @@ class TopStories extends Component {
 
           <Text style={styles.subtitle}>Sports</Text>
           { state.loadingSports ? (
-            <View style={{ alignSelf: 'center', width: 20, height: 20 }}>
-              <ActivityIndicator
-                color={'#dc1f1b'}
-                size={'small'}
-              />
+            <View style={styles.progress_container}>
+              <View style={styles.progress}>
+                <ActivityIndicator color={'#dc1f1b'} size={'small'} />
+              </View>
             </View>
           ) : (
             <ListView
@@ -234,11 +237,10 @@ class TopStories extends Component {
 
           <Text style={styles.subtitle}>Health</Text>
           { state.loadingHealth ? (
-            <View style={{ alignSelf: 'center', width: 20, height: 20 }}>
-              <ActivityIndicator
-                color={'#dc1f1b'}
-                size={'small'}
-              />
+            <View style={styles.progress_container}>
+              <View style={styles.progress}>
+                <ActivityIndicator color={'#dc1f1b'} size={'small'} />
+              </View>
             </View>
           ) : (
             <ListView
@@ -266,11 +268,10 @@ class TopStories extends Component {
 
           <Text style={styles.subtitle}>Technology</Text>
           { state.loadingTech ? (
-            <View style={{ alignSelf: 'center', width: 20, height: 20 }}>
-              <ActivityIndicator
-                color={'#dc1f1b'}
-                size={'small'}
-              />
+            <View style={styles.progress_container}>
+              <View style={styles.progress}>
+                <ActivityIndicator color={'#dc1f1b'} size={'small'} />
+              </View>
             </View>
           ) : (
             <ListView
@@ -298,11 +299,10 @@ class TopStories extends Component {
 
           <Text style={styles.subtitle}>Movies</Text>
           { state.loadingMovies ? (
-            <View style={{ alignSelf: 'center', width: 20, height: 20 }}>
-              <ActivityIndicator
-                color={'#dc1f1b'}
-                size={'small'}
-              />
+            <View style={styles.progress_container}>
+              <View style={styles.progress}>
+                <ActivityIndicator color={'#dc1f1b'} size={'small'} />
+              </View>
             </View>
           ) : (
             <ListView
@@ -365,7 +365,17 @@ const styles = StyleSheet.create({
     position: 'absolute', bottom: 20, left: 20
   },
   article_title: {
-    position: 'absolute', bottom: 20, left: 20
+    backgroundColor: 'transparent', color: 'white', fontSize: 12, fontFamily: 'AvenirNext-Regular', paddingLeft: 10
+  },
+  progress_container: {
+    flex: 1, width: 200, height: 200, alignSelf: 'center'
+  },
+  progress: {
+    position: 'absolute',
+    left: 75,
+    top: 75,
+    width: 50,
+    height: 50
   }
 });
 

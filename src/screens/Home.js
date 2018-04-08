@@ -45,15 +45,15 @@ const MainTab = TabNavigator({
     navigationOptions: {
       tabBarLabel: 'Home',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="md-search" size={25} color="black" />
+      <Ionicons name="ios-home" size={25} color="#91b4ff" />
     }
   },
   Search: {
     screen: Search,
     navigationOptions: {
-      tabBarLabel: 'Home',
+      tabBarLabel: 'Search',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="md-search" size={25} color="black" />
+      <Ionicons name="ios-search" size={25} color="#91b4ff" />
     },
     tabBarOnPress: ({ scene, jumpToIndex, previousScene }) => {
       const { route, index } = scene
@@ -66,9 +66,9 @@ const MainTab = TabNavigator({
   Books: {
     screen: Books,
     navigationOptions: {
-      tabBarLabel: 'Home',
+      tabBarLabel: 'Books',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="md-search" size={25} color="black" />
+      <Ionicons name="ios-book" size={25} color="#91b4ff" />
     },
     tabBarOnPress: ({ scene, jumpToIndex, previousScene }) => {
       const { route, index } = scene
@@ -81,9 +81,9 @@ const MainTab = TabNavigator({
   Profile: {
     screen: Profile,
     navigationOptions: {
-      tabBarLabel: 'Home',
+      tabBarLabel: 'Profile',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="md-search" size={25} color="black" />
+      <Ionicons name="ios-person" size={30} color="#91b4ff" />
     }
   }
 }, {
