@@ -98,25 +98,31 @@ class Search extends Component {
             { this.state.loading ? (
               <Loading />
             ) : (
-              <ListView
-                z-index={2}
-                enableEmptySections={true}
-                dataSource={this.state.dataSource}
-                renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
-                removeClippedSubviews={false}
-                onEndReached={() => {
-                  // if (this.state.data.length >= 10 && !this.state.loading) {
-                  //   this.fetchEventsMore(this.props.events.takemeout.length)
-                  // }
-                  console.log('onEndReached')
-                }}
-                onEndReachedThreshold={10}
-                refreshControl={(
-                  <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                    console.log('onRefresh')
-                  }} />
-                )}
-              />
+              <View style={{ flex: 1, flexDirection: 'column' }}>
+                { this.state.dataSource._dataBlob.s1.length > 1 ? (
+                  <Text style={{ backgroundColor: '#dddddd', color: 'black', fontSize: 20, fontWeight: 'bold', fontFamily: 'AvenirNext-Regular', padding: 10 }}>Result : </Text>
+                ) : null }
+                <ListView
+                  z-index={2}
+                  style={{ backgroundColor: '#dddddd' }}
+                  enableEmptySections={true}
+                  dataSource={this.state.dataSource}
+                  renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
+                  removeClippedSubviews={false}
+                  onEndReached={() => {
+                    // if (this.state.data.length >= 10 && !this.state.loading) {
+                    //   this.fetchEventsMore(this.props.events.takemeout.length)
+                    // }
+                    console.log('onEndReached')
+                  }}
+                  onEndReachedThreshold={10}
+                  refreshControl={(
+                    <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
+                      console.log('onRefresh')
+                    }} />
+                  )}
+                />
+              </View>
             ) }
           </View>
 
