@@ -135,16 +135,7 @@ class TopStories extends Component {
           ) : null }
 
 
-          <LinearGradient colors={[ 'transparent', 'transparent', '#000000']} style={{
-            flex: 1,
-            flexDirection: 'row',
-            paddingTop: 0,
-            paddingBottom: 0,
-            backgroundColor: 'transparent',
-            position: 'absolute',
-            width: 300,
-            height: 200
-          }}>
+          <LinearGradient colors={[ 'transparent', 'transparent', '#000000']} style={styles.gradient_container}>
           <View style={styles.article_title_container}>
             <Text multiline={true} numberOfLines={2} style={styles.article_title}>{article.title}</Text>
           </View>
@@ -394,6 +385,16 @@ const styles = StyleSheet.create({
     top: 75,
     width: 50,
     height: 50
+  },
+  gradient_container: {
+    flex: 1,
+    flexDirection: 'row',
+    paddingTop: 0,
+    paddingBottom: 0,
+    backgroundColor: 'transparent',
+    position: 'absolute',
+    width: 300,
+    height: 200
   }
 });
 

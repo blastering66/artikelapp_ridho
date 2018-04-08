@@ -56,16 +56,7 @@ class Search extends Component {
             <Image resizeMode={'cover'} source={{ uri: mediaUrl }} style={{ flex: 1, height: 200 }} />
           ) }
 
-          <LinearGradient colors={[ 'transparent', 'transparent', '#000000']} style={{
-            flex: 1,
-            flexDirection: 'row',
-            paddingTop: 0,
-            paddingBottom: 0,
-            backgroundColor: 'transparent',
-            position: 'absolute',
-            width: width,
-            height: 200
-          }}>
+          <LinearGradient colors={[ 'transparent', 'transparent', '#000000']} style={styles.gradient_container}>
           <View style={styles.article_title_container}>
             <Text multiline={false} numberOfLines={2} style={styles.article_title}>{article.snippet}</Text>
           </View>
@@ -76,6 +67,7 @@ class Search extends Component {
   }
 
   searchArticle(query) {
+    this.setState({ loading: true })
     fetch('https://api.nytimes.com/svc/search/v2/articlesearch.json?q='+ query + '&api-key=95ac032aee02495e89b21009b3ce3f15', {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
@@ -88,9 +80,6 @@ class Search extends Component {
   render() {
     return (
       <View style={styles.container}>
-        { this.state.loading ? (
-          <Loading />
-        ) : (
           <View style={{ flex: 1, flexDirection: 'column', paddingBottom: 50 }}>
             <View style={{ height: 50,  backgroundColor: 'white', borderBottomWidth: 1, borderBottomColor: 'gray' }}>
               <TextInput
@@ -106,29 +95,30 @@ class Search extends Component {
               onChangeText={(text) => this.setState({ query: text })}
               />
             </View>
-            <ListView
-              z-index={2}
-              enableEmptySections={true}
-              dataSource={this.state.dataSource}
-              renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
-              removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
-            />
+            { this.state.loading ? (
+              <Loading />
+            ) : (
+              <ListView
+                z-index={2}
+                enableEmptySections={true}
+                dataSource={this.state.dataSource}
+                renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
+                removeClippedSubviews={false}
+                onEndReached={() => {
+                  // if (this.state.data.length >= 10 && !this.state.loading) {
+                  //   this.fetchEventsMore(this.props.events.takemeout.length)
+                  // }
+                  console.log('onEndReached')
+                }}
+                onEndReachedThreshold={10}
+                refreshControl={(
+                  <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
+                    console.log('onRefresh')
+                  }} />
+                )}
+              />
+            ) }
           </View>
-
-        ) }
-
 
       </View>
     )
@@ -175,6 +165,16 @@ const styles = StyleSheet.create({
     top: 75,
     width: 50,
     height: 50
+  },
+  gradient_container: {
+    flex: 1,
+    flexDirection: 'row',
+    paddingTop: 0,
+    paddingBottom: 0,
+    backgroundColor: 'transparent',
+    position: 'absolute',
+    width: width,
+    height: 200
   }
 });
 

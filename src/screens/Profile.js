@@ -3,75 +3,51 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
+  View, Image,
   ListView, RefreshControl, TouchableHighlight
 } from 'react-native';
 import { fetcher, ENDPOINT } from '../utils/common'
 import Loading from '../components/Loading'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
 const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 
 class Profile extends Component {
-  static navigationOptions = {
-    header: null
-  }
+  static navigationOptions = ({navigation}) => ({
+    title: 'Profile',
+    headerBackTitle: null,
+    headerRight: null,
+    headerStyle: {
+      backgroundColor: 'white'
+    },
+    headerTitleStyle: { fontSize: 16 },
+    headerBackTitleStyle: { color: '#000000' },
+    headerTintColor: '#000000',
+    headerMode: 'screen',
+    gesturesEnabled: true
+  })
+
 
   state = {
     loading: false,
-    refreshing: false,
-    hasMore: true,
-    dataSource: [],
-    dataSource: ds.cloneWithRows([])
+    refreshing: false
   }
 
   componentDidMount() {
-    this.setState({ loading: true })
-    fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=95ac032aee02495e89b21009b3ce3f15', {
-    method: 'GET' }).then((response) => response.json())
-    .then((json) => {
-      this.setState({ loading: false })
-      console.log('response json', json)
-      this.setState({ dataSource: ds.cloneWithRows(json.results) })
-    })
-  }
 
-  renderRowList(article, rowID) {
-    return(
-      <TouchableHighlight onPress={() => this.props.navigation.navigate('Detail') }>
-        <View style={{ flex: 1, flexDirection: 'row', padding: 10 }}>
-          <Text>{article.title}</Text>
-        </View>
-      </TouchableHighlight>
-    )
   }
 
   render() {
     return (
       <View style={styles.container}>
-        { this.state.loading ? (
-          <Loading />
-        ) : (
-          <ListView
-            z-index={2}
-            enableEmptySections={true}
-            dataSource={this.state.dataSource}
-            renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
-            removeClippedSubviews={false}
-            onEndReached={() => {
-              // if (this.state.data.length >= 10 && !this.state.loading) {
-              //   this.fetchEventsMore(this.props.events.takemeout.length)
-              // }
-              console.log('onEndReached')
-            }}
-            onEndReachedThreshold={10}
-            refreshControl={(
-              <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                console.log('onRefresh')
-              }} />
-            )}
-          />
-        ) }
-
+        <View style={styles.container_header}>
+          <Image
+            resizeMode={'cover'}
+            style={{ width: 100, height: 100, borderRadius: 50, marginBottom: 20 }}
+            source={{ uri: 'https://avatars0.githubusercontent.com/u/3015184?s=460&v=4' }} />
+          <Text style={styles.name}>Ridho Maulana Aryasa</Text>
+          <Text style={styles.email}>ridho_maulana@outlook.com</Text>
+        </View>
 
       </View>
     )
@@ -81,19 +57,21 @@ class Profile extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flexDirection: 'column',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  container_header: {
+    height: 200,
+    paddingTop: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  name: {
+    backgroundColor: 'transparent', color: 'black', fontSize: 18, fontWeight: 'bold', fontFamily: 'AvenirNext-Regular', paddingLeft: 10, paddingRight: 20
+  },
+  email: {
+    backgroundColor: 'transparent', color: 'black', fontSize: 14, fontFamily: 'AvenirNext-Regular', paddingLeft: 10, paddingRight: 20
   },
 });
 

@@ -56,10 +56,10 @@ class Books extends Component {
       console.log('no media', article)
     }
     return(
-      <TouchableHighlight onPress={() => this.props.navigation.navigate('Detail', { article: article}) }>
-        <View style={{ flex: 1, height: 100, flexDirection: 'row'}}>
+      <TouchableHighlight>
+        <View style={{ flex: 1, height: 50, flexDirection: 'row'}}>
         <View style={styles.article_title_container}>
-          <Text multiline={false} numberOfLines={2} style={styles.article_title}>Author : {article.author} {article.title}</Text>
+          <Text multiline={true} numberOfLines={2} style={styles.article_title}>{article.author} {article.title}</Text>
         </View>
         </View>
       </TouchableHighlight>
@@ -76,6 +76,9 @@ class Books extends Component {
             z-index={2}
             enableEmptySections={true}
             dataSource={this.state.dataSource}
+            renderSeparator={() => (
+              <View style={{ height: 1, borderBottomWidth: 1, borderBottomColor: '#dddddd' }} />
+            )}
             renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
             removeClippedSubviews={false}
             onEndReached={() => {

@@ -11,7 +11,6 @@ import { TabNavigator } from 'react-navigation'
 import { fetcher, ENDPOINT } from '../utils/common'
 import Loading from '../components/Loading'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-
 import TopStories from './TopStories'
 import Search from './Search'
 import Books from './Books'

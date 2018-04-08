@@ -65,7 +65,7 @@ class Detail extends Component {
         <View style={{ alignSelf: 'center', alignItems: 'center', flexDirection: 'row',
     justifyContent: 'space-around',
     padding: 10 }}>
-          <ActivityIndicator color={'#dc1f1b'} size={'large'} />
+          <ActivityIndicator color={'gray'} size={'small'} />
         </View>
       </View>
     )
