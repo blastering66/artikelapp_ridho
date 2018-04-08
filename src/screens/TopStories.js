@@ -7,9 +7,8 @@ import {
 } from 'react-native';
 import { fetcher, ENDPOINT } from '../utils/common'
 import Loading from '../components/Loading'
-
+import LinearGradient from 'react-native-linear-gradient'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
 
 const { width } = Dimensions.get('window')
 const dsTop = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
@@ -20,10 +19,19 @@ const dsTech = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 const dsMovies = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 
 class TopStories extends Component {
-  static navigationOptions = {
-    header: null
-  }
-
+  static navigationOptions = ({navigation}) => ({
+    title: 'Home',
+    headerBackTitle: null,
+    headerRight: null,
+    headerStyle: {
+      backgroundColor: 'white'
+    },
+    headerTitleStyle: { fontSize: 16 },
+    headerBackTitleStyle: { color: '#000000' },
+    headerTintColor: '#000000',
+    headerMode: 'screen',
+    gesturesEnabled: true
+  })
   state = {
     loadingTop: false,
     loadingWorld: false,
@@ -120,16 +128,27 @@ class TopStories extends Component {
       console.log('no media', article)
     }
     return(
-      <TouchableHighlight onPress={() => this.props.navigation.navigate('Detail') }>
-        <View style={{ flex: 1, height: 200, width: 300,  flexDirection: 'row', padding: 10 }}>
+      <TouchableHighlight onPress={() => this.props.navigation.navigate('Detail', { title: article.title, article: article}) }>
+        <View style={{ flex: 1, height: 200, width: 300,  flexDirection: 'row', margin: 10 }}>
           { mediaUrl !== '' ? (
             <Image resizeMode={'cover'} source={{ uri: mediaUrl !== '' ? article.multimedia[3].url : '' }} style={{ flex: 1 }} />
-          ) : (
-            <Ionicons name="md-search" size={25} color="black" style={{ alignSelf: 'center' }} />
-          ) }
+          ) : null }
+
+
+          <LinearGradient colors={[ 'transparent', 'transparent', '#000000']} style={{
+            flex: 1,
+            flexDirection: 'row',
+            paddingTop: 0,
+            paddingBottom: 0,
+            backgroundColor: 'transparent',
+            position: 'absolute',
+            width: 300,
+            height: 200
+          }}>
           <View style={styles.article_title_container}>
-            <Text style={styles.article_title}>{article.title}</Text>
+            <Text multiline={true} numberOfLines={2} style={styles.article_title}>{article.title}</Text>
           </View>
+          </LinearGradient>
         </View>
       </TouchableHighlight>
     )
@@ -139,7 +158,6 @@ class TopStories extends Component {
     const state = this.state
     return (
       <View style={styles.root}>
-        <Text style={styles.title}>RIDHO NEWS</Text>
         <ScrollView>
           <View style={styles.container}>
           <Text style={styles.subtitle}>Top Stories</Text>
@@ -362,10 +380,10 @@ const styles = StyleSheet.create({
     flex: 1, height: 200
   },
   article_title_container: {
-    position: 'absolute', bottom: 20, left: 20
+    position: 'absolute', bottom: 20
   },
   article_title: {
-    backgroundColor: 'transparent', color: 'white', fontSize: 12, fontFamily: 'AvenirNext-Regular', paddingLeft: 10
+    backgroundColor: 'transparent', color: 'white', fontSize: 14, fontFamily: 'AvenirNext-Regular', paddingLeft: 10, paddingRight: 20
   },
   progress_container: {
     flex: 1, width: 200, height: 200, alignSelf: 'center'

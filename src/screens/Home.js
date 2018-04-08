@@ -45,7 +45,7 @@ const MainTab = TabNavigator({
     navigationOptions: {
       tabBarLabel: 'Home',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="ios-home" size={25} color="#91b4ff" />
+      <Ionicons name="ios-home" size={25} color={focused ? "black" : "gray"} />
     }
   },
   Search: {
@@ -53,7 +53,7 @@ const MainTab = TabNavigator({
     navigationOptions: {
       tabBarLabel: 'Search',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="ios-search" size={25} color="#91b4ff" />
+      <Ionicons name="ios-search" size={25} color={focused ? "black" : "gray"} />
     },
     tabBarOnPress: ({ scene, jumpToIndex, previousScene }) => {
       const { route, index } = scene
@@ -68,7 +68,7 @@ const MainTab = TabNavigator({
     navigationOptions: {
       tabBarLabel: 'Books',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="ios-book" size={25} color="#91b4ff" />
+      <Ionicons name="ios-book" size={25} color={focused ? "black" : "gray"} />
     },
     tabBarOnPress: ({ scene, jumpToIndex, previousScene }) => {
       const { route, index } = scene
@@ -83,7 +83,7 @@ const MainTab = TabNavigator({
     navigationOptions: {
       tabBarLabel: 'Profile',
       tabBarIcon: ({ focused, tintColor }) =>
-      <Ionicons name="ios-person" size={30} color="#91b4ff" />
+      <Ionicons name="ios-person" size={30} color={focused ? "black" : "gray"} />
     }
   }
 }, {
