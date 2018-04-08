@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import {
   Platform,
   StyleSheet,
-  Text,
+  Text, TouchableWithoutFeedback,
   View, Dimensions, Image, ScrollView, ListView, RefreshControl, TouchableHighlight, ActivityIndicator
 } from 'react-native';
 import { fetcher, ENDPOINT } from '../utils/common'
 import Loading from '../components/Loading'
 import LinearGradient from 'react-native-linear-gradient'
 import Ionicons from 'react-native-vector-icons/Ionicons'
+import moment from 'moment'
 
 const { width } = Dimensions.get('window')
 const dsTop = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
@@ -19,10 +20,19 @@ const dsTech = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 const dsMovies = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 
 class TopStories extends Component {
+
   static navigationOptions = ({navigation}) => ({
     title: 'Home',
     headerBackTitle: null,
-    headerRight: null,
+    headerRight: (
+      <TouchableWithoutFeedback style={styles.headCol} onPress={() => {
+        navigation.setParams({ sortClicked: true })
+      }}>
+        <View style={{ padding: 10 }}>
+          <Image resizeMode={'contain'} style={{ width: 20, height: 20 }} source={require('../../assets/images/ic_sort.png')} />
+        </View>
+      </TouchableWithoutFeedback>
+    ),
     headerStyle: {
       backgroundColor: 'white'
     },
@@ -32,7 +42,10 @@ class TopStories extends Component {
     headerMode: 'screen',
     gesturesEnabled: true
   })
+
   state = {
+    sortNewest: false,
+    sortClicked: false,
     loadingTop: false,
     loadingWorld: false,
     loadingSports: false,
@@ -60,11 +73,47 @@ class TopStories extends Component {
 
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.state.sortClicked !== nextProps.navigation.state.params.sortClicked && nextProps.navigation.state.params.sortClicked) {
+      this.sortArray()
+      this.setState({ sortClicked: false })
+    }
+  }
+
+  sortFunction(a,b){
+    var dateA = new Date(a.published_date).getTime();
+    var dateB = new Date(b.published_date).getTime();
+    return dateA > dateB ? 1 : -1;
+  }
+
+  sortArray(array) {
+    if (!this.state.sortNewest) {
+      this.setState({ dataSourceTop: dsTop.cloneWithRows(this.state.dataSourceTop._dataBlob.s1.sort(this.sortFunction)) })
+      this.setState({ dataSourceWorld: dsWorld.cloneWithRows(this.state.dataSourceWorld._dataBlob.s1.sort(this.sortFunction)) })
+      this.setState({ dataSourceSports: dsSports.cloneWithRows(this.state.dataSourceSports._dataBlob.s1.sort(this.sortFunction)) })
+      this.setState({ dataSourceTech: dsTech.cloneWithRows(this.state.dataSourceTech._dataBlob.s1.sort(this.sortFunction)) })
+      this.setState({ dataSourceHealth: dsHealth.cloneWithRows(this.state.dataSourceHealth._dataBlob.s1.sort(this.sortFunction)) })
+      this.setState({ dataSourceMovies: dsMovies.cloneWithRows(this.state.dataSourceMovies._dataBlob.s1.sort(this.sortFunction)) })
+    } else {
+      this.setState({ dataSourceTop: dsTop.cloneWithRows(this.state.dataSourceTop._dataBlob.s1.reverse()) })
+      this.setState({ dataSourceWorld: dsWorld.cloneWithRows(this.state.dataSourceWorld._dataBlob.s1.reverse()) })
+      this.setState({ dataSourceSports: dsSports.cloneWithRows(this.state.dataSourceSports._dataBlob.s1.reverse()) })
+      this.setState({ dataSourceTech: dsTech.cloneWithRows(this.state.dataSourceTech._dataBlob.s1.reverse()) })
+      this.setState({ dataSourceHealth: dsHealth.cloneWithRows(this.state.dataSourceHealth._dataBlob.s1.reverse()) })
+      this.setState({ dataSourceMovies: dsMovies.cloneWithRows(this.state.dataSourceMovies._dataBlob.s1.reverse()) })
+    }
+    this.setState({ sortNewest: !this.state.sortNewest })
+
+    // this.setState({ dataSourceTop: dsTop.cloneWithRows(this.state.dataSourceTop._dataBlob.s1.reverse()) })
+  }
+
   fetchTopStories() {
     this.setState({ loadingTop: true })
     fetch('https://api.nytimes.com/svc/topstories/v2/home.json?api-key=95ac032aee02495e89b21009b3ce3f15', {
     method: 'GET' }).then((response) => response.json())
     .then((json) => {
+      const array = json.results.slice(0, 10)
+      console.log('array', array)
       this.setState({ loadingTop: false })
       this.setState({ dataSourceTop: dsTop.cloneWithRows(json.results.slice(0, 10)) })
     })
@@ -120,13 +169,20 @@ class TopStories extends Component {
     })
   }
 
+
   renderRowList(article, rowID) {
     let mediaUrl = ''
     try {
       mediaUrl = article.multimedia[3].url
     } catch (err) {
-      console.log('no media', article)
+      // console.log('no media', article)
     }
+    const now = moment(new Date()).format('MMMM Do YYYY, h:mm:ss a')
+    const articleDate = moment(article.published_date).format('MMMM Do YYYY, h:mm:ss a')
+    // console.log('now', now)
+    // console.log('articleDate', articleDate)
+    // console.log('duration', moment(articleDate, 'MMMM Do YYYY, h:mm:ss a').startOf('hour').fromNow())
+
     return(
       <TouchableHighlight onPress={() => this.props.navigation.navigate('Detail', { title: article.title, article: article}) }>
         <View style={{ flex: 1, height: 200, width: 300,  flexDirection: 'row', margin: 10 }}>
@@ -137,7 +193,10 @@ class TopStories extends Component {
 
           <LinearGradient colors={[ 'transparent', 'transparent', '#000000']} style={styles.gradient_container}>
           <View style={styles.article_title_container}>
-            <Text multiline={true} numberOfLines={2} style={styles.article_title}>{article.title}</Text>
+            <View style={{ flex: 1, flexDirection: 'column' }}>
+              <Text multiline={true} numberOfLines={2} style={styles.article_title}>{article.title}</Text>
+              <Text multiline={true} numberOfLines={2} style={styles.article_date}>{moment(articleDate, 'MMMM Do YYYY, h:mm:ss a').startOf('hour').fromNow()}</Text>
+            </View>
           </View>
           </LinearGradient>
         </View>
@@ -167,18 +226,6 @@ class TopStories extends Component {
               dataSource={this.state.dataSourceTop}
               renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
               removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
             />
           )}
 
@@ -198,18 +245,6 @@ class TopStories extends Component {
               dataSource={this.state.dataSourceWorld}
               renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
               removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
             />
           )}
 
@@ -229,18 +264,6 @@ class TopStories extends Component {
               dataSource={this.state.dataSourceSports}
               renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
               removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
             />
           )}
 
@@ -260,18 +283,6 @@ class TopStories extends Component {
               dataSource={this.state.dataSourceHealth}
               renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
               removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
             />
           )}
 
@@ -291,18 +302,6 @@ class TopStories extends Component {
               dataSource={this.state.dataSourceTech}
               renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
               removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
             />
           )}
 
@@ -322,18 +321,6 @@ class TopStories extends Component {
               dataSource={this.state.dataSourceMovies}
               renderRow={(event, sectionID, rowID) => this.renderRowList(event, rowID)}
               removeClippedSubviews={false}
-              onEndReached={() => {
-                // if (this.state.data.length >= 10 && !this.state.loading) {
-                //   this.fetchEventsMore(this.props.events.takemeout.length)
-                // }
-                console.log('onEndReached')
-              }}
-              onEndReachedThreshold={10}
-              refreshControl={(
-                <RefreshControl refreshing={this.state.refreshing} onRefresh={() => {
-                  console.log('onRefresh')
-                }} />
-              )}
             />
           )}
           </View>
@@ -375,6 +362,9 @@ const styles = StyleSheet.create({
   },
   article_title: {
     backgroundColor: 'transparent', color: 'white', fontSize: 14, fontFamily: 'AvenirNext-Regular', paddingLeft: 10, paddingRight: 20
+  },
+  article_date: {
+    backgroundColor: 'transparent', color: 'white', fontSize: 12, fontFamily: 'AvenirNext-Regular', paddingLeft: 10, paddingRight: 20
   },
   progress_container: {
     flex: 1, width: 200, height: 200, alignSelf: 'center'

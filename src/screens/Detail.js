@@ -20,7 +20,7 @@ class Detail extends Component {
     headerRight: (
       <TouchableWithoutFeedback style={styles.headCol} onPress={() => {
         Share.share({
-          message: `${navigation.state.params.article.abstract}`,
+          message: `${navigation.state.params.article.abstract}`+ ` ` + `${navigation.state.params.article.url}`,
           url: `${navigation.state.params.article.url}`,
           title: `${navigation.state.params.article.title}`
         }, {

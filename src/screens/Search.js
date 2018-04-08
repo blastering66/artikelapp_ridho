@@ -81,7 +81,7 @@ class Search extends Component {
     return (
       <View style={styles.container}>
           <View style={{ flex: 1, flexDirection: 'column', paddingBottom: 50 }}>
-            <View style={{ height: 50,  backgroundColor: 'white', borderBottomWidth: 1, borderBottomColor: 'gray' }}>
+            <View style={{ height: 50,  backgroundColor: 'white'}}>
               <TextInput
               underlineColorAndroid={'transparent'}
               placeholder="Type Here..."
