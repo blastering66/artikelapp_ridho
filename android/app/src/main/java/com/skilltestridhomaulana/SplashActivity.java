@@ -8,11 +8,6 @@ import android.content.SharedPreferences;
 import android.widget.Toast;
 
 public class SplashActivity extends AppCompatActivity {
-  @Override
-  public void onNewIntent(Intent intent) {
-      setIntent(intent);
-  }
-
     /**
      * Returns the name of the main component registered from JavaScript.
      * This is used to schedule rendering of the component.
@@ -26,7 +21,6 @@ public class SplashActivity extends AppCompatActivity {
          // Toast.makeText(getApplicationContext(), authToken, Toast.LENGTH_LONG ).show();
 
          Intent intent = new Intent(this, MainActivity.class);
-         intent.putExtra(this.getIntent());
          startActivity(intent);
          finish();
 

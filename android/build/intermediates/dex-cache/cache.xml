@@ -12,6 +12,87 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_3120fe9616e653850e1ac7b4091bc03553c686b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_511b9b00f527fddb68a16dce22c754ca49656177.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_19995068a05da3143a3cc4a2c200e541c49e5f5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_447ca20ca1106d94ec5e668ba3c5c1356cecfb66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_e240a863f82b4287a4d2a04bca4da73a972e48a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_698392490b5fad84d1f74a6038b92baec5602219.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_d32484c7282d392daddb80f79a47b29f861cd8a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_233f5321da5151174820520954c0032453e9bb34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.1/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_01834b13311c0be39b275b3ca1a5bd3ae4648eca.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -27,15 +108,6 @@
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
         <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1_54b4c60af2cb720e1eea0a6f1c39f9f0cf5c1491.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_3120fe9616e653850e1ac7b4091bc03553c686b1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,15 +138,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_511b9b00f527fddb68a16dce22c754ca49656177.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -90,15 +153,6 @@
         revision="23.0.1"
         sha1="f162442a19fff13995fbd51ba414d9ee05579080">
         <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_134a47ee32d4665df19914d0c31236e57336188a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_19995068a05da3143a3cc4a2c200e541c49e5f5c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,33 +192,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_447ca20ca1106d94ec5e668ba3c5c1356cecfb66.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_e240a863f82b4287a4d2a04bca4da73a972e48a1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_698392490b5fad84d1f74a6038b92baec5602219.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/macbook/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -198,33 +225,6 @@
         revision="23.0.1"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
         <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_5cb88215b54e50374b0aeb6bd82d6298b2701fee.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.github.ybq/Android-SpinKit/1.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="21c0f1b0de29bfe601028757c5cb125c343f5164">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.github.ybq-Android-SpinKit-1.1.0_d32484c7282d392daddb80f79a47b29f861cd8a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_233f5321da5151174820520954c0032453e9bb34.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.1/jars/libs/infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="/Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_01834b13311c0be39b275b3ca1a5bd3ae4648eca.jar" />
     </item>
 
 </items>

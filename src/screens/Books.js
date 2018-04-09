@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#F5FCFF',
+    paddingBottom: 50
   },
   title: {
     fontSize: 20, fontWeight: 'bold', fontFamily: 'AvenirNext-Regular', padding: 20
