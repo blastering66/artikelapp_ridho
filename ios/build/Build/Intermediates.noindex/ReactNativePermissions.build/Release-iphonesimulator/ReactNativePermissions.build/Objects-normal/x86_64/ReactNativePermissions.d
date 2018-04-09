@@ -1,0 +1,34 @@
+dependencies: \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/ReactNativePermissions.m \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/ReactNativePermissions.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTDefines.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTBridge.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTConvert.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTLog.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTAssert.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTUtils.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/yoga/Yoga.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/ios/build/Build/Products/Release-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPLocation.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/RCTConvert+RNPStatus.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPBluetooth.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPNotification.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPAudioVideo.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPEvent.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPPhoto.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPContacts.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPBackgroundRefresh.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPSpeechRecognition.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPMediaLibrary.h \
+  /Users/macbook/Desktop/React-Native-Workspace/SkillTestRidhoMaulana/node_modules/react-native-permissions/ios/Permissions/RNPMotion.h
