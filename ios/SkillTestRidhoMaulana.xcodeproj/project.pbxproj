@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -12,8 +13,12 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* SkillTestRidhoMaulanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SkillTestRidhoMaulanaTests.m */; };
+		0271CCF952B847958FD0D7D3 /* AvenirNext-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4784917D098F45F7BA1CA42E /* AvenirNext-DemiBold.ttf */; };
 		03C3C9EF20814B578AD81C4A /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0675DE9544B849368163D1C4 /* Ionicons.ttf */; };
 		045B3A50226D42E8825F61EF /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F3F0701072A43958C6580DA /* Zocial.ttf */; };
+		09A2D245DE9845948F1621E2 /* AvenirNextCondensed-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A59AFFD804F48A897CE6F67 /* AvenirNextCondensed-HeavyItalic.ttf */; };
+		0E24E2C1F4BC46CBB878CCFC /* AvenirNextCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FC523746CF41CCBF61B5EA /* AvenirNextCondensed-BoldItalic.ttf */; };
+		0F8DF18BE955426EBEC6C05E /* AvenirNextCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D810A00ED3E3414CB7CD9159 /* AvenirNextCondensed-Bold.ttf */; };
 		10722BEFD72A405FBB609139 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC6986FB1C314420B8A35EDC /* Octicons.ttf */; };
 		11CA08A97C754A0F84DDE0CC /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 440E3C3706B840468AA0C2D4 /* FontAwesome.ttf */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
@@ -25,6 +30,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		1E9FEBCC6DB940E98E0175AB /* AvenirNext-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9BDE597D01C4F2F88E519A1 /* AvenirNext-Heavy.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -38,46 +44,41 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* SkillTestRidhoMaulanaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* SkillTestRidhoMaulanaTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		2FE4EE7C31AA46CA8790C2FB /* AvenirNextCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94711D4DDF92497CB1EEB395 /* AvenirNextCondensed-Italic.ttf */; };
 		3734B2D9A01F4464972FCF57 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2D9C8B0300442D784730C9F /* SimpleLineIcons.ttf */; };
+		471806B3B99D4C7EAFD57074 /* AvenirNextCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91CC0B983D5D446AB2FD36E7 /* AvenirNextCondensed-Regular.ttf */; };
 		4ABB5B5D0F2045449D7C356C /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA29686357154E0F9B8E68EB /* Feather.ttf */; };
 		4D55E2FD25734BECA2DC1C6A /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23AD8BFC095D4634A2B6B614 /* EvilIcons.ttf */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		673A71256A734C65BB4094E3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7E9230F714E00AD019299 /* MaterialIcons.ttf */; };
 		6807C62A8B3349CC853A4031 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C587BB85173D4C2BAD085295 /* libBVLinearGradient.a */; };
 		6F470618ACCA48B1870BE4F0 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040D3964E6D4E06A132FF7D /* libRNVectorIcons.a */; };
+		76B571CFE1964DDC8189B2F1 /* AvenirNext-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0495069479436FBA9B0566 /* AvenirNext-MediumItalic.ttf */; };
+		785B085488C64067BCEC9710 /* AvenirNext-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 559C2C2019774A8B9EE46103 /* AvenirNext-Medium.ttf */; };
 		79F5D28DEBF545918D0AC784 /* libRNSpinkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9676DD9BB104A7B8CEA9A23 /* libRNSpinkit.a */; };
+		7A603F59C38248B38874795D /* AvenirNext-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16A4E847A2C41D192FD1FDB /* AvenirNext-Italic.ttf */; };
+		7B32E4CEB7204C22A888EE0C /* AvenirNext-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71B089A971BE4FC3AFA945CB /* AvenirNext-UltraLight.ttf */; };
+		7D67CC94B4E748E39BF8E69C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB81DB91D1C497FA10B8C8B /* FontAwesome.ttf */; };
+		7DC248EFC5A547C19991D939 /* AvenirNextCondensed-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89A60F86C94C48ED865C3848 /* AvenirNextCondensed-UltraLight.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		924BE7435C054D4A8736269D /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B01377B1DCD4BE0918F7774 /* Foundation.ttf */; };
-		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		B9FF4CB32AA94596B4CA43BC /* libReactNativePermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E041270F99A4F31818360A9 /* libReactNativePermissions.a */; };
-		DA720E17E1B042FBB3F7BB06 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868300371CD64083AC90BAF3 /* Entypo.ttf */; };
-		F1166CED3BC542DE9713CE4F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA11A512872B4F6D86260AC5 /* MaterialCommunityIcons.ttf */; };
-		E5DF0A5A50EF40E99B5D3C15 /* AvenirNext-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88B83E0EE45F428B8443A47C /* AvenirNext-Bold.ttf */; };
-		D9145D857D714E7BB51B3903 /* AvenirNext-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 676402F3C4B94DAE8BC4AA90 /* AvenirNext-BoldItalic.ttf */; };
-		0271CCF952B847958FD0D7D3 /* AvenirNext-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4784917D098F45F7BA1CA42E /* AvenirNext-DemiBold.ttf */; };
-		EFF16E30DAA3443BA8FEC4C9 /* AvenirNext-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9623B9B384F4C4EA6047F3B /* AvenirNext-DemiBoldItalic.ttf */; };
-		1E9FEBCC6DB940E98E0175AB /* AvenirNext-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9BDE597D01C4F2F88E519A1 /* AvenirNext-Heavy.ttf */; };
-		FD499CD17CD64C6AA705D734 /* AvenirNext-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 302905C879554ACEABE99479 /* AvenirNext-HeavyItalic.ttf */; };
-		7A603F59C38248B38874795D /* AvenirNext-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E16A4E847A2C41D192FD1FDB /* AvenirNext-Italic.ttf */; };
-		785B085488C64067BCEC9710 /* AvenirNext-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 559C2C2019774A8B9EE46103 /* AvenirNext-Medium.ttf */; };
-		76B571CFE1964DDC8189B2F1 /* AvenirNext-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0495069479436FBA9B0566 /* AvenirNext-MediumItalic.ttf */; };
-		B512F5DC655040A797AFDBF7 /* AvenirNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59BC0E594CD84DE29CF0C79C /* AvenirNext-Regular.ttf */; };
-		7B32E4CEB7204C22A888EE0C /* AvenirNext-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71B089A971BE4FC3AFA945CB /* AvenirNext-UltraLight.ttf */; };
 		9ABEFFE59E3847F3BD4C8434 /* AvenirNext-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E3F1D1CEF845BCAB8AD1AB /* AvenirNext-UltraLightItalic.ttf */; };
-		0F8DF18BE955426EBEC6C05E /* AvenirNextCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D810A00ED3E3414CB7CD9159 /* AvenirNextCondensed-Bold.ttf */; };
-		0E24E2C1F4BC46CBB878CCFC /* AvenirNextCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95FC523746CF41CCBF61B5EA /* AvenirNextCondensed-BoldItalic.ttf */; };
+		AA07782F991D45F88E95EBAE /* AvenirNextCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B84877AD9F94338AB9D541E /* AvenirNextCondensed-Medium.ttf */; };
+		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		B512F5DC655040A797AFDBF7 /* AvenirNext-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59BC0E594CD84DE29CF0C79C /* AvenirNext-Regular.ttf */; };
+		B9FF4CB32AA94596B4CA43BC /* libReactNativePermissions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E041270F99A4F31818360A9 /* libReactNativePermissions.a */; };
 		C7B82954942845158E788C34 /* AvenirNextCondensed-DemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C249872448E4221BF870FC0 /* AvenirNextCondensed-DemiBold.ttf */; };
 		C973F6C360804861B6C3913B /* AvenirNextCondensed-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3411FF260A3C44BA99CEAE4D /* AvenirNextCondensed-DemiBoldItalic.ttf */; };
-		E4B85B4342534559A42D7EB3 /* AvenirNextCondensed-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 012FF12707F54C9892A93820 /* AvenirNextCondensed-Heavy.ttf */; };
-		09A2D245DE9845948F1621E2 /* AvenirNextCondensed-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A59AFFD804F48A897CE6F67 /* AvenirNextCondensed-HeavyItalic.ttf */; };
-		2FE4EE7C31AA46CA8790C2FB /* AvenirNextCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94711D4DDF92497CB1EEB395 /* AvenirNextCondensed-Italic.ttf */; };
-		AA07782F991D45F88E95EBAE /* AvenirNextCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B84877AD9F94338AB9D541E /* AvenirNextCondensed-Medium.ttf */; };
 		D33501D234C944708035E28F /* AvenirNextCondensed-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4694E7F01B7F41E290CEB4CA /* AvenirNextCondensed-MediumItalic.ttf */; };
-		471806B3B99D4C7EAFD57074 /* AvenirNextCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91CC0B983D5D446AB2FD36E7 /* AvenirNextCondensed-Regular.ttf */; };
-		7DC248EFC5A547C19991D939 /* AvenirNextCondensed-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89A60F86C94C48ED865C3848 /* AvenirNextCondensed-UltraLight.ttf */; };
-		DFB1C60787E0433CA3846ADA /* AvenirNextCondensed-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82539638636F47BABF1C6E0C /* AvenirNextCondensed-UltraLightItalic.ttf */; };
-		7D67CC94B4E748E39BF8E69C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DB81DB91D1C497FA10B8C8B /* FontAwesome.ttf */; };
+		D9145D857D714E7BB51B3903 /* AvenirNext-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 676402F3C4B94DAE8BC4AA90 /* AvenirNext-BoldItalic.ttf */; };
+		DA720E17E1B042FBB3F7BB06 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 868300371CD64083AC90BAF3 /* Entypo.ttf */; };
 		DB90D97E4CEC49248AA9CC18 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3692B0B49F6447F6B79ED7AD /* Ionicons.ttf */; };
+		DFB1C60787E0433CA3846ADA /* AvenirNextCondensed-UltraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82539638636F47BABF1C6E0C /* AvenirNextCondensed-UltraLightItalic.ttf */; };
+		E4B85B4342534559A42D7EB3 /* AvenirNextCondensed-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 012FF12707F54C9892A93820 /* AvenirNextCondensed-Heavy.ttf */; };
+		E5DF0A5A50EF40E99B5D3C15 /* AvenirNext-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88B83E0EE45F428B8443A47C /* AvenirNext-Bold.ttf */; };
+		EFF16E30DAA3443BA8FEC4C9 /* AvenirNext-DemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9623B9B384F4C4EA6047F3B /* AvenirNext-DemiBoldItalic.ttf */; };
+		F1166CED3BC542DE9713CE4F /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA11A512872B4F6D86260AC5 /* MaterialCommunityIcons.ttf */; };
+		FD499CD17CD64C6AA705D734 /* AvenirNext-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 302905C879554ACEABE99479 /* AvenirNext-HeavyItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -409,10 +410,12 @@
 		00E356EE1AD99517003FC87E /* SkillTestRidhoMaulanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkillTestRidhoMaulanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* SkillTestRidhoMaulanaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkillTestRidhoMaulanaTests.m; sourceTree = "<group>"; };
+		012FF12707F54C9892A93820 /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-Heavy.ttf"; path = "../assets/fonts/AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; };
 		0675DE9544B849368163D1C4 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		0DB81DB91D1C497FA10B8C8B /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = ../assets/fonts/FontAwesome.ttf; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* SkillTestRidhoMaulana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillTestRidhoMaulana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* NewsApp Ridho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsApp Ridho.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SkillTestRidhoMaulana/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SkillTestRidhoMaulana/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -422,16 +425,35 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1E041270F99A4F31818360A9 /* libReactNativePermissions.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativePermissions.a; sourceTree = "<group>"; };
 		23AD8BFC095D4634A2B6B614 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		2C249872448E4221BF870FC0 /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-DemiBold.ttf"; path = "../assets/fonts/AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* SkillTestRidhoMaulana-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SkillTestRidhoMaulana-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* SkillTestRidhoMaulana-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SkillTestRidhoMaulana-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		302905C879554ACEABE99479 /* AvenirNext-HeavyItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-HeavyItalic.ttf"; path = "../assets/fonts/AvenirNext-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		3411FF260A3C44BA99CEAE4D /* AvenirNextCondensed-DemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-DemiBoldItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-DemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3692B0B49F6447F6B79ED7AD /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = ../assets/fonts/Ionicons.ttf; sourceTree = "<group>"; };
+		3A59AFFD804F48A897CE6F67 /* AvenirNextCondensed-HeavyItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-HeavyItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		3B84877AD9F94338AB9D541E /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-Medium.ttf"; path = "../assets/fonts/AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; };
 		440E3C3706B840468AA0C2D4 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		4694E7F01B7F41E290CEB4CA /* AvenirNextCondensed-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-MediumItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4784917D098F45F7BA1CA42E /* AvenirNext-DemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-DemiBold.ttf"; path = "../assets/fonts/AvenirNext-DemiBold.ttf"; sourceTree = "<group>"; };
+		559C2C2019774A8B9EE46103 /* AvenirNext-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Medium.ttf"; path = "../assets/fonts/AvenirNext-Medium.ttf"; sourceTree = "<group>"; };
+		59BC0E594CD84DE29CF0C79C /* AvenirNext-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Regular.ttf"; path = "../assets/fonts/AvenirNext-Regular.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		676402F3C4B94DAE8BC4AA90 /* AvenirNext-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-BoldItalic.ttf"; path = "../assets/fonts/AvenirNext-BoldItalic.ttf"; sourceTree = "<group>"; };
+		71B089A971BE4FC3AFA945CB /* AvenirNext-UltraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-UltraLight.ttf"; path = "../assets/fonts/AvenirNext-UltraLight.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7B01377B1DCD4BE0918F7774 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		7C0495069479436FBA9B0566 /* AvenirNext-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-MediumItalic.ttf"; path = "../assets/fonts/AvenirNext-MediumItalic.ttf"; sourceTree = "<group>"; };
+		82539638636F47BABF1C6E0C /* AvenirNextCondensed-UltraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-UltraLightItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-UltraLightItalic.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		868300371CD64083AC90BAF3 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		88B83E0EE45F428B8443A47C /* AvenirNext-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Bold.ttf"; path = "../assets/fonts/AvenirNext-Bold.ttf"; sourceTree = "<group>"; };
+		89A60F86C94C48ED865C3848 /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-UltraLight.ttf"; path = "../assets/fonts/AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; };
 		8BA7E9230F714E00AD019299 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		91CC0B983D5D446AB2FD36E7 /* AvenirNextCondensed-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-Regular.ttf"; path = "../assets/fonts/AvenirNextCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		94711D4DDF92497CB1EEB395 /* AvenirNextCondensed-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-Italic.ttf"; path = "../assets/fonts/AvenirNextCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		95FC523746CF41CCBF61B5EA /* AvenirNextCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-BoldItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
 		9F3F0701072A43958C6580DA /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		A028401D9E70481F8BD36D62 /* ReactNativePermissions.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativePermissions.xcodeproj; path = "../node_modules/react-native-permissions/ios/ReactNativePermissions.xcodeproj"; sourceTree = "<group>"; };
 		A3FCE4C75CF54253AD2B6A21 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
@@ -440,36 +462,15 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B2D9C8B0300442D784730C9F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		C587BB85173D4C2BAD085295 /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
+		D810A00ED3E3414CB7CD9159 /* AvenirNextCondensed-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNextCondensed-Bold.ttf"; path = "../assets/fonts/AvenirNextCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		D9BDE597D01C4F2F88E519A1 /* AvenirNext-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Heavy.ttf"; path = "../assets/fonts/AvenirNext-Heavy.ttf"; sourceTree = "<group>"; };
 		DA11A512872B4F6D86260AC5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		DA29686357154E0F9B8E68EB /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		DF1517A655C74687BE7C35B8 /* RNSpinkit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSpinkit.xcodeproj; path = "../node_modules/react-native-spinkit/ios/RNSpinkit.xcodeproj"; sourceTree = "<group>"; };
+		E16A4E847A2C41D192FD1FDB /* AvenirNext-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-Italic.ttf"; path = "../assets/fonts/AvenirNext-Italic.ttf"; sourceTree = "<group>"; };
 		F3047E78175B490DA365DDB8 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
-		88B83E0EE45F428B8443A47C /* AvenirNext-Bold.ttf */ = {isa = PBXFileReference; name = "AvenirNext-Bold.ttf"; path = "../assets/fonts/AvenirNext-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		676402F3C4B94DAE8BC4AA90 /* AvenirNext-BoldItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNext-BoldItalic.ttf"; path = "../assets/fonts/AvenirNext-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4784917D098F45F7BA1CA42E /* AvenirNext-DemiBold.ttf */ = {isa = PBXFileReference; name = "AvenirNext-DemiBold.ttf"; path = "../assets/fonts/AvenirNext-DemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F9623B9B384F4C4EA6047F3B /* AvenirNext-DemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNext-DemiBoldItalic.ttf"; path = "../assets/fonts/AvenirNext-DemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D9BDE597D01C4F2F88E519A1 /* AvenirNext-Heavy.ttf */ = {isa = PBXFileReference; name = "AvenirNext-Heavy.ttf"; path = "../assets/fonts/AvenirNext-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		302905C879554ACEABE99479 /* AvenirNext-HeavyItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNext-HeavyItalic.ttf"; path = "../assets/fonts/AvenirNext-HeavyItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E16A4E847A2C41D192FD1FDB /* AvenirNext-Italic.ttf */ = {isa = PBXFileReference; name = "AvenirNext-Italic.ttf"; path = "../assets/fonts/AvenirNext-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		559C2C2019774A8B9EE46103 /* AvenirNext-Medium.ttf */ = {isa = PBXFileReference; name = "AvenirNext-Medium.ttf"; path = "../assets/fonts/AvenirNext-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7C0495069479436FBA9B0566 /* AvenirNext-MediumItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNext-MediumItalic.ttf"; path = "../assets/fonts/AvenirNext-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		59BC0E594CD84DE29CF0C79C /* AvenirNext-Regular.ttf */ = {isa = PBXFileReference; name = "AvenirNext-Regular.ttf"; path = "../assets/fonts/AvenirNext-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		71B089A971BE4FC3AFA945CB /* AvenirNext-UltraLight.ttf */ = {isa = PBXFileReference; name = "AvenirNext-UltraLight.ttf"; path = "../assets/fonts/AvenirNext-UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F8E3F1D1CEF845BCAB8AD1AB /* AvenirNext-UltraLightItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNext-UltraLightItalic.ttf"; path = "../assets/fonts/AvenirNext-UltraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D810A00ED3E3414CB7CD9159 /* AvenirNextCondensed-Bold.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-Bold.ttf"; path = "../assets/fonts/AvenirNextCondensed-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		95FC523746CF41CCBF61B5EA /* AvenirNextCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-BoldItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2C249872448E4221BF870FC0 /* AvenirNextCondensed-DemiBold.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-DemiBold.ttf"; path = "../assets/fonts/AvenirNextCondensed-DemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3411FF260A3C44BA99CEAE4D /* AvenirNextCondensed-DemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-DemiBoldItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-DemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		012FF12707F54C9892A93820 /* AvenirNextCondensed-Heavy.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-Heavy.ttf"; path = "../assets/fonts/AvenirNextCondensed-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3A59AFFD804F48A897CE6F67 /* AvenirNextCondensed-HeavyItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-HeavyItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-HeavyItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		94711D4DDF92497CB1EEB395 /* AvenirNextCondensed-Italic.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-Italic.ttf"; path = "../assets/fonts/AvenirNextCondensed-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3B84877AD9F94338AB9D541E /* AvenirNextCondensed-Medium.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-Medium.ttf"; path = "../assets/fonts/AvenirNextCondensed-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4694E7F01B7F41E290CEB4CA /* AvenirNextCondensed-MediumItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-MediumItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		91CC0B983D5D446AB2FD36E7 /* AvenirNextCondensed-Regular.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-Regular.ttf"; path = "../assets/fonts/AvenirNextCondensed-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		89A60F86C94C48ED865C3848 /* AvenirNextCondensed-UltraLight.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-UltraLight.ttf"; path = "../assets/fonts/AvenirNextCondensed-UltraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		82539638636F47BABF1C6E0C /* AvenirNextCondensed-UltraLightItalic.ttf */ = {isa = PBXFileReference; name = "AvenirNextCondensed-UltraLightItalic.ttf"; path = "../assets/fonts/AvenirNextCondensed-UltraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0DB81DB91D1C497FA10B8C8B /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../assets/fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3692B0B49F6447F6B79ED7AD /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../assets/fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8E3F1D1CEF845BCAB8AD1AB /* AvenirNext-UltraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-UltraLightItalic.ttf"; path = "../assets/fonts/AvenirNext-UltraLightItalic.ttf"; sourceTree = "<group>"; };
+		F9623B9B384F4C4EA6047F3B /* AvenirNext-DemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirNext-DemiBoldItalic.ttf"; path = "../assets/fonts/AvenirNext-DemiBoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -724,7 +725,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* SkillTestRidhoMaulana.app */,
+				13B07F961A680F5B00A75B9A /* NewsApp Ridho.app */,
 				00E356EE1AD99517003FC87E /* SkillTestRidhoMaulanaTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* SkillTestRidhoMaulana-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* SkillTestRidhoMaulana-tvOSTests.xctest */,
@@ -866,7 +867,7 @@
 			);
 			name = SkillTestRidhoMaulana;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* SkillTestRidhoMaulana.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* NewsApp Ridho.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* SkillTestRidhoMaulana-tvOS */ = {
@@ -1570,7 +1571,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = SkillTestRidhoMaulana;
+				PRODUCT_NAME = "NewsApp Ridho";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1594,7 +1595,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_NAME = SkillTestRidhoMaulana;
+				PRODUCT_NAME = "NewsApp Ridho";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
